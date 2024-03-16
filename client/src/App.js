@@ -7,13 +7,13 @@ function App() {
 
   useEffect(() => {
     const fetchLogs = async () => {
-      const response = await axios.get('http://localhost:8000/logs');
+      const response = await axios.get('https://newassessment-bi87.onrender.com/logs');
       setLogs(response.data);
     };
 
     fetchLogs();
 
-    const ws = new WebSocket('ws://localhost:8000/ws');
+    const ws = new WebSocket('wss://newassessment-bi87.onrender.com/ws');
 
     ws.onopen = () => {
       console.log('WebSocket is connected');
