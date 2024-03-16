@@ -4,6 +4,8 @@
 **Log Watcher Application**
 This is a simple web application that allows users to watch logs in real-time. It consists of a frontend built with React and a backend built with Express, including WebSocket functionality.
 
+**The log file named as log.txt I have kept inside the Server folder from which the changes are tracked.**
+
 **Features**
 Real-time log updates using WebSocket communication.
 Displays the last 10 logs.
